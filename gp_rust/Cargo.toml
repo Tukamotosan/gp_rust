@@ -1,0 +1,6 @@
+[package]
+name = "gp_rust"
+version = "0.1.0"
+authors = ["Tukamotosan <hamaantama@gmail.com>"]
+
+[dependencies]
