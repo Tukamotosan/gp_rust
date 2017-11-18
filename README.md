@@ -29,7 +29,7 @@ In a simple numeric problem, for example, the following functions is Function Se
 
 The sample code of evaluate function is the following code.
 
-'''
+```python
 def eval(expr):
     # expr is an expression in prefix notation
     if expr is list:
@@ -50,7 +50,7 @@ def eval(expr):
             # constant
             value = expr()
     return value
-'''
+```
 
 ## References
 
