@@ -27,6 +27,33 @@ In a simple numeric problem, for example, the following functions is Function Se
 
 ### Fitness Function
 
+The sample code of evaluate function is the following code.
+
+'''python
+def eval(expr):
+    """
+    expr is an expression in prefix notation
+    """
+    if expr is list:
+        # expr[0] represents the primitive at
+        # the root of the expression
+        proc = expr[0]
+        if proc is function:
+            # evalueate function
+            value = proc(expr[1], expr[2], ...)
+        else:
+            value = proc(expr[1], expr[2], ...)
+
+    else:
+        if expr is variable or expr is constant:
+            # just read the value
+            value = expr()
+        else
+            # constant
+            value = expr()
+    return value
+'''
+
 ## References
 
 * [Genetic Programming](http://geneticprogramming.com/)
