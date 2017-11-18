@@ -31,9 +31,7 @@ The sample code of evaluate function is the following code.
 
 '''python
 def eval(expr):
-    """
-    expr is an expression in prefix notation
-    """
+    # expr is an expression in prefix notation
     if expr is list:
         # expr[0] represents the primitive at
         # the root of the expression
