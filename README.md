@@ -54,7 +54,12 @@ def eval(expr):
 
 ## Chapter 5 Alternative Initialisations and Operators in Tree-based GP
 
-$`x`$
+```math
+\begin{eqnarray}
+4a &=& ((a+a)+a)+a \\
+&=& (a+a)+(a+a)
+\end{eqnarray}
+```
 
 ## References
 
