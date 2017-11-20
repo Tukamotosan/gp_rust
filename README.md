@@ -4,7 +4,7 @@ Genetic Programming by rust
 
 ## data set
 
-### Terminal Set
+### Step 1: Terminal Set
 
 The terminal set may consists the following items.
 
@@ -12,7 +12,7 @@ The terminal set may consists the following items.
 * functions with no arguments. For example `rand()`.
 * constants. These can be pre-specified, randomly generated as part of the tree creation process, or created by mutation.
 
-### Function Set
+### Step 2: Function Set
 
 In a simple numeric problem, for example, the following functions is Function Set. Basicaly the function set used n GP is typically driven by the nature of the problem domain.
 
@@ -25,9 +25,10 @@ In a simple numeric problem, for example, the following functions is Function Se
 | Looping           | For           |
 | etc               | ...           |
 
-### Fitness Function
+### Step 3: Fitness Function
 
 The sample code of evaluate function is the following code.
+Basicaly, fitness function evalueates all possible test data(`x1,x2,xN`).
 
 ```python
 def eval(expr):
@@ -51,6 +52,25 @@ def eval(expr):
             value = expr()
     return value
 ```
+
+### Step 4: GP Parameters
+
+The control parameters are the following items.
+
+* `population size`
+* `probabilities of performing the genetic operations`
+* the number of runs `R`
+* the number of generations `G`
+* the size of the populations `P`
+* average size of the programs `s`
+* the number of fitness cases `F`
+
+### Step 5: Termination and solution designation
+
+$$c^2=a^2 + b^2 $$
+
+These parameters are depend too much on the details of the application.
+
 
 ## References
 
